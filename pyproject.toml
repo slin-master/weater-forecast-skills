@@ -1,0 +1,18 @@
+[project]
+name = "weather-forecast-skill"
+version = "1.0.0"
+description = "..."
+authors = [{ name = "Nils Friedrichs" }]
+
+dependencies = ["requests>=2.31.0"]
+
+[project.urls]
+Homepage = "https://friedrichs-it.de/blog/building-agent-skills-tutorial"
+Repository = "https://github.com/slin-master/weater-forecast-skills"
+
+[project.scripts]
+weather-geocode = "scripts.geocode:main"
+weather-forecast = "scripts.get_forecast:main"
+
+[tool.uv]
+dev-dependencies = ["pytest>=7.0.0", "pytest-cov>=4.0.0"]
